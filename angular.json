@@ -21,8 +21,14 @@
             "polyfills": "apps/app/src/polyfills.ts",
             "tsConfig": "apps/app/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/app/src/favicon.ico", "apps/app/src/assets"],
-            "styles": ["apps/app/src/styles.scss"],
+            "assets": [
+              "apps/app/src/favicon.ico",
+              "apps/app/src/assets"
+            ],
+            "styles": [
+              "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "apps/app/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -76,7 +82,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/app/src/**/*.ts"]
+            "lintFilePatterns": [
+              "apps/app/src/**/*.ts"
+            ]
           }
         },
         "test": {
@@ -109,7 +117,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/app-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/app-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
