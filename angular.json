@@ -30,6 +30,7 @@
             ],
             "styles": [
               "./node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+              "./node_modules/@nebular/theme/styles/prebuilt/corporate.css",
               "apps/app/src/styles.scss"
             ],
             "scripts": []
